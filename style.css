@@ -15,7 +15,7 @@ body {
     border-radius: 1rem;
     align-items: center;
     min-height: 45rem;
-    min-width: 40rem;
+    width: 40rem;
 }
 
 .head {
@@ -23,7 +23,7 @@ body {
     flex-direction: column;
     border: 0.25rem solid black;
     border-radius: 1rem;
-    min-width: 90%;
+    width: 90%;
     min-height: 10rem;
     margin: 1rem;
     gap: 0.5rem;
@@ -34,9 +34,11 @@ body {
 
 .head > * {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    word-break: break-all;
 }
 
 .input {
@@ -48,7 +50,12 @@ body {
 .result {
     flex: 4;
     font-size: 4rem;
+    direction: rtl;
     /* border: 0.25rem solid black; */
+}
+
+.linkbreak {
+    width: 100%;
 }
 
 .body {
@@ -69,6 +76,7 @@ body {
     align-items: center;
     font-size: 3rem;
     cursor: pointer;
+    user-select: none;
 }
 
 .body > *:hover {

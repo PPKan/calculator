@@ -130,7 +130,7 @@ function changeText() {
             break;
         case "":
             break;
-        case "clean", "equal":
+        case "clean" || "equal":
             inputArea.textContent = "";
             break;
     }
