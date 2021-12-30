@@ -50,7 +50,7 @@ body {
 .result {
     flex: 4;
     font-size: 4rem;
-    direction: rtl;
+    /* direction: rtl; */
     /* border: 0.25rem solid black; */
 }
 

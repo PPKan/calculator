@@ -78,7 +78,7 @@ function inputKeys(event) {
             number = number.slice(1);
         }
     } else if (input === ".") {
-        if (parseInt(number, 10).isInteger) {
+        if (Number.isInteger(+number) && number.charAt(number.length - 1) !== ".") {
             number += ".";
         }
     } else if (input === "X") {
@@ -130,7 +130,8 @@ function changeText() {
             break;
         case "":
             break;
-        case "clean" || "equal":
+        case "clean":
+        case "equal":
             inputArea.textContent = "";
             break;
     }
