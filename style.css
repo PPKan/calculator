@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding-top: 5%;
     align-items: center;
+    background: darkgrey;
+    color: slategray;
     /* justify-content: center; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
@@ -11,17 +13,20 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    border: 0.25rem solid black;
+    /* border: 0.25rem solid black; */
     border-radius: 1rem;
     align-items: center;
     min-height: 45rem;
-    width: 40rem;
+    max-width: 40rem;
+    background: lavender;
 }
+
+
 
 .head {
     display: flex;
     flex-direction: column;
-    border: 0.25rem solid black;
+    /* border: 0.25rem solid black; */
     border-radius: 1rem;
     width: 90%;
     min-height: 10rem;
@@ -29,6 +34,7 @@ body {
     gap: 0.5rem;
     padding: 1rem;
     align-items: flex-end;
+    background: whitesmoke;
     /* justify-content: center; */
 }
 
@@ -36,9 +42,11 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
     word-break: break-all;
+    text-align-last: right;
+    
 }
 
 .input {
@@ -69,7 +77,7 @@ body {
 
 /* cell */
 .body > * {
-    border: 0.125rem solid black;
+    /* border: 0.125rem solid black; */
     border-radius: 1rem;
     display: flex;
     justify-content: center;
@@ -77,10 +85,15 @@ body {
     font-size: 3rem;
     cursor: pointer;
     user-select: none;
+    background: seashell;
 }
 
 .body > *:hover {
     background: aliceblue;
 }
 
-
+@media (min-width: 700px) {
+    .container {
+        width: 40rem;
+    }
+}
