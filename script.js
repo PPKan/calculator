@@ -65,7 +65,7 @@ function inputKeys(event) {
             justFinished = false;
         }
         number += input;
-    } else if (input === "C") {
+    } else if (input === "CE") {
         number = number.slice(0, -1);
     } else if (input === "AC") {
         number = "";
